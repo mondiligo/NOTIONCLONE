@@ -5,7 +5,9 @@ It includes a block editor, a command palette accessible via a button, and
 dynamic tables backed by a small data engine with sample datasets.
 
 Selecting **Data Table** from the command palette opens a dataset picker. Use
-the search box to filter datasets and choose one to render as a dynamic table.
+the search box to filter datasets by name or description and choose one to
+render as a dynamic table. Each dataset entry shows its description so you know
+what data will appear in the table.
 
 Two sample datasets are included: "Ventas de Productos 2024" and
 "Inventario 2024". You can extend `data-engine.ts` with your own data.
