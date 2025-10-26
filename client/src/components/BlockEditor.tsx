@@ -71,7 +71,14 @@ export default function BlockEditor() {
       ))}
       {showPalette && <CommandPalette onSelect={handleSelect} />}
       {selectDataset && <DatasetSelector onSelect={handleDataset} />}
-      <button onClick={() => setShowPalette(!showPalette)}>+</button>
+      <button
+        onClick={() => {
+          setSelectDataset(false);
+          setShowPalette(true);
+        }}
+      >
+        +
+      </button>
     </div>
   );
 }
